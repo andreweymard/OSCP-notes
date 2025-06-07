@@ -1,0 +1,2 @@
+* MMC can be used to group snap-ins, or administrative tools, to manage hardware, software, and network components within a Windows host.
+* MMC works with the concept of snap-ins, allowing administrators to create a customized console with only the administrative tools needed to manage several services.
