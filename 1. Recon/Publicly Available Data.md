@@ -1,0 +1,13 @@
+#### Gathering Public Data
+
+To gain a thorough understanding of a company, you need to gather publicly available information—a process known as Open Source Intelligence (OSINT). This is vast topic that cannot be covered within a few section. But when you want to understand how to obtain all the necessary information about a company you can use the [OSINT: Corporate Recon](https://academy.hackthebox.com/course/preview/osint-corporate-recon) module to learn it. This includes basic details about the company’s operations, services, location, and technology. You can find this information from various sources, such as company websites, news releases, financial reports, and social media. Company websites typically provide insights into the company’s offerings and services. For publicly traded companies, annual reports can reveal financial performance and partnerships. Social media platforms like LinkedIn and Twitter offer information about employees and recent company updates
+
+You can also learn a lot from public records, such as business licenses and patents, which provide insights into the company's legal structure and assets. Additionally, knowing where the company has offices can help you understand its operational setup and identify potential security concerns.
+
+#### Understanding Connections
+
+After collecting this information, you can see what other companies and tools the organization depends on. This includes their business partners, suppliers, and the software they use. These connections could have security risks that need to be checked. Looking at job postings and employee profiles can tell you what software the company uses. Job listings often mention specific computer programs or systems that employees need to know. This gives you clues about their technology.
+
+Social media, especially LinkedIn, is great for learning about the company's tech staff. By looking at their profiles, you can see what they're good at and what projects they've worked on. GitHub, where developers share code, is another useful source of information.
+
+GitHub can tell you a lot about how a company builds software. Sometimes companies share their tools publicly, which shows how they work. These shared files might include instructions or examples of how they use different technologies. Sometimes, developers accidentally share sensitive information. For example, they might accidentally include access points, passwords, or secret keys in their code. This can be dangerous because others could use this information to attack and break into their systems.
