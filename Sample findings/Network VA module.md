@@ -1,0 +1,59 @@
+``` bash
+
+`user@parrot:~/Desktop$` sudo !! 
+sudo nmap -top-ports 2000 10.129.233.210 -Pn -sS      
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-09-24 22:04 AEST    
+Stats: 0:00:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 14.87% done; ETC: 22:05 (0:00:46 remaining)
+Stats: 0:03:42 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 45.26% done; ETC: 22:13 (0:04:30 remaining)      Nmap scan report for 10.129.233.210                       
+Host is up (0.21s latency).                          
+Not shown: 1992 closed tcp ports (reset)            
+PORT     STATE SERVICE                           
+21/tcp   open  ftp                                 
+22/tcp   open  ssh                                 
+80/tcp   open  http                               
+443/tcp  open  https                              
+8000/tcp open  http-alt                           
+8001/tcp open  vcom-tunnel
+8080/tcp open  http-proxy                           
+8889/tcp open  ddi-tcp-2                            
+
+Nmap done: 1 IP address (1 host up) scanned in 822.04 seconds
+
+`user@parrot:~/Desktop$` sudo nmap -p 80 10.129.233.210 -sV
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-09-24 22:23 AEST
+Nmap scan report for 10.129.233.210
+Host is up (0.18s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.95 seconds
+
+`user@parrot:~/Desktop$` sudo nmap -p 443 10.129.233.210 -sV -sC
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-09-24 22:26 AEST
+Nmap scan report for 10.129.233.210
+Host is up (0.18s latency).
+
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http Apache httpd 2.4.52 ((Ubuntu))
+| ssl-cert: Subject: commonName=cube-case.htb/organizationName=Organization/stateOrProvinceName=State/countryName=US
+| Not valid before: 2025-02-15T18:00:13
+|_Not valid after:  2026-02-15T18:00:13
+| http-cookie-flags:                                
+|   /:                                              
+|     PHPSESSID:                                    
+|_      httponly flag not set
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Cube Case                             
+|_http-generator: WordPress 6.7.2
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+| tls-alpn:                                         
+|_  http/1.1                                        
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 49.14 seconds
+```
