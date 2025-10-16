@@ -128,7 +128,7 @@ Host script results:
 |   authentication_level: user
 |   challenge_response: supported
 |_  message_signing: disabled (dangerous, but default)
-| smb-os-discovery:
+| smb-os-discoveryNI:
 |   OS: Windows Server 2019 Standard 17763 (Windows Server 2019 Standard 6.3)
 |   Computer name: WIN01
 |   NetBIOS computer name: WIN01\\x00
