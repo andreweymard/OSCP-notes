@@ -8,7 +8,7 @@ CIFS is considered a specific version of the SMB protocol, primarily aligning wi
 | SMB 2.1     | Windows 7, Windows Server 2008 R2   | Locking mechanisms                                                     |
 | SMB 3.0     | Windows 8, Windows Server 2012      | Multichannel connections, end-to-end encryption, remote storage access |
 | SMB 3.0.2   | Windows 8.1, Windows Server 2012 R2 |                                                                        |
-|  SMB 3.1.1  | Windows 10, Windows Server 2016     | Integrity checking, AES-128 encryption                                 |
+| SMB 3.1.1   | Windows 10, Windows Server 2016     | Integrity checking, AES-128 encryption                                 |
 
 We know that Samba is suitable for both Linux and Windows systems. In a network, each host participates in the same `workgroup`. A workgroup is a group name that identifies an arbitrary collection of computers and their resources on an SMB network. There can be multiple workgroups on the network at any given time. IBM developed an `application programming interface` (`API`) for networking computers called the `Network Basic Input/Output System` (`NetBIOS`). The NetBIOS API provided a blueprint for an application to connect and share data with other computers. In a NetBIOS environment, when a machine goes online, it needs a name, which is done through the so-called `name registration` procedure. Either each host reserves its hostname on the network, or the [NetBIOS Name Server](https://networkencyclopedia.com/netbios-name-server-nbns/) (`NBNS`) is used for this purpose. It also has been enhanced to [Windows Internet Name Service](https://networkencyclopedia.com/windows-internet-name-service-wins/) (`WINS`).
 

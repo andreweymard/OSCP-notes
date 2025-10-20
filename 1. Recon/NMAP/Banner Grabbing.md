@@ -25,10 +25,11 @@ Nmap done: 1 IP address (1 host up) scanned in 91.73 seconds
 ```
 
 
-Scanning Options 	Description
-10.129.2.28 	Scans the specified target.
--p- 	Scans all ports.
--sV 	Performs service version detection on specified ports.
+|Scanning Options |	Description|
+|-|-|
+|10.129.2.28 	|Scans the specified target.|
+|-p- |	Scans all ports.|
+|-sV 	|Performs service version detection on specified ports.|
 
 Primarily, Nmap looks at the banners of the scanned ports and prints them out. If it cannot identify versions through the banners, Nmap attempts to identify them through a signature-based matching system, but this significantly increases the scan's duration. One disadvantage to Nmap's presented results is that the automatic scan can miss some information because sometimes Nmap does not know how to handle it. Let us look at an example of this.
 Service Enumeration
@@ -68,17 +69,19 @@ If we look at the results from Nmap, we can see the port's status, service name,
     NSOCK INFO [0.4200s] nsock_trace_handler_callback(): Callback: READ SUCCESS for EID 18 [10.129.2.28:25] (35 bytes): 220 inlane ESMTP Postfix (Ubuntu)..
 
 Then we see that the SMTP server on our target gave us more information than Nmap showed us. Because here, we see that it is the Linux distribution Ubuntu. It happens because, after a successful three-way handshake, the server often sends a banner for identification. This serves to let the client know which service it is working with. At the network level, this happens with a PSH flag in the TCP header. However, it can happen that some services do not immediately provide such information. It is also possible to remove or manipulate the banners from the respective services. If we manually connect to the SMTP server using nc, grab the banner, and intercept the network traffic using tcpdump, we can see what Nmap did not show us.
-Tcpdump
-Service Enumeration
 
+Tcpdump
+
+``` bash
 astrocat@htb[/htb]$ sudo tcpdump -i eth0 host 10.10.14.2 and 10.129.2.28
 
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+```
 
-Nc
-Service Enumeration
+Netcat
 
+``` bash
 astrocat@htb[/htb]$  nc -nv 10.129.2.28 25
 
 Connection to 10.129.2.28 port 25 [tcp/*] succeeded!
@@ -92,6 +95,7 @@ Service Enumeration
 18:28:07.255281 IP 10.10.14.2.59618 > 10.129.2.28.smtp: Flags [.], ack 1, win 2058, options [nop,nop,TS val 331260304 ecr 1800383922], length 0
 18:28:07.319306 IP 10.129.2.28.smtp > 10.10.14.2.59618: Flags [P.], seq 1:36, ack 1, win 510, options [nop,nop,TS val 1800383985 ecr 331260304], length 35: SMTP: 220 inlane ESMTP Postfix (Ubuntu)
 18:28:07.319426 IP 10.10.14.2.59618 > 10.129.2.28.smtp: Flags [.], ack 36, win 2058, options [nop,nop,TS val 331260368 ecr 1800383985], length 0
+```
 
 The first three lines show us the three-way handshake.
 

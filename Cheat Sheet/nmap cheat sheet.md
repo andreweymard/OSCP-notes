@@ -1,4 +1,5 @@
 ## Scanning Options
+sudo nmap 10.129.2.28 -p- -sV -Pn -n --disable-arp-ping
 
 | Nmap Option          | Description                                                               |
 | :------------------- | :------------------------------------------------------------------------ |
