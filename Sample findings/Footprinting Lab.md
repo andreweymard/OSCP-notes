@@ -281,9 +281,7 @@ Started on November 10, 2021 at 01:27 PM London time GMT (GMT+0200)
 34            absoluteTimeoutInMinutes=1440
 35            idleTimeoutInMinutes=1440
 36    }   
----
 ```
-
 #### SMBCLIENT
 ``` bash
 user@parrot:~$ smbclient -L //10.129.94.9 -U alex
@@ -308,7 +306,8 @@ smb: \> ls
   ..                                  D        0  Thu Nov 11 03:12:22 2021
   important.txt                       A       16  Thu Nov 11 03:12:55 2021
 
-                10328063 blocks of size 4096. 6100038 blocks available
+10328063 blocks of size 4096. 6100038 blocks available
+
 smb: \> get important.txt 
 getting file \important.txt of size 16 as important.txt (0.0 KiloBytes/sec) (average 0.0 KiloBytes/sec)
 
