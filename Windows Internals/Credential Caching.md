@@ -1,0 +1,2 @@
+We need to ensure that only connection protocols and tools that don't cache credentials upon a successful login are utilized (such as `WinRM`). Windows logons with `logon type 3 (Network Logon)` typically don't cache credentials on the remote systems. The best example of "know your tools" that comes to mind is "PsExec". When "PsExec" is used with explicit credentials, those credentials are cached on the remote machine. When "PsExec" is used without credentials through the session of the currently logged-on user, the credentials are not cached on the remote machine.
+

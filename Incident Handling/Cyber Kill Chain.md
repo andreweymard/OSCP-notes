@@ -1,0 +1,3 @@
+The cyber kill chain consists of seven different stages, as depicted in the image below: ![Flowchart of cyber kill chain steps: Recon, Weaponize, Deliver, Exploit, Install, C&C, Action.](https://academy.hackthebox.com/storage/modules/148/Cyber_kill_chain.png)
+
+![Reconnaissance Stage diagram split into Active and Passive Recon. Active Recon: Identify target and scope; Locate open ports; Identify services on open ports; Map entire network. Passive Recon: Information gathering from web sources (job ads, company partners); Social media (LinkedIn, Instagram, Facebook); Avoid detection at all times. Icons accompany each item on a dark background.](https://academy.hackthebox.com/storage/modules/148/ir_recon.png)
