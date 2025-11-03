@@ -2,8 +2,6 @@ The Get-WinEvent cmdlet is an indispensable tool in PowerShell for querying Wind
 
 To quickly identify the available logs, we can leverage the `-ListLog` parameter in conjunction with the Get-WinEvent cmdlet. By specifying `*` as the parameter value, we retrieve all logs without applying any filtering criteria. This allows us to obtain a comprehensive list of logs and their associated properties. By executing the following command, we can retrieve the list of logs and display essential properties such as `LogName`, `RecordCount`, `IsClassicLog`, `IsEnabled`, `LogMode`, and `LogType`. The `|` character is a pipe operator. It is used to pass the output of one command (in this case, the `Get-WinEvent` command) to another command (in this case, the `Select-Object` command).
 
-Get-WinEvent
-
 ```powershell-session
 PS C:\Users\Administrator> Get-WinEvent -ListLog * | Select-Object LogName, RecordCount, IsClassicLog, IsEnabled, LogMode, LogType | Format-Table -AutoSize
 
@@ -50,8 +48,6 @@ Microsoft-Windows-WinINet-Config/ProxyConfigChanged                             
 This command provides us with valuable information about each log, including the name of the log, the number of records present, whether the log is in the classic `.evt` format or the newer `.evtx` format, its enabled status, the log mode (Circular, Retain, or AutoBackup), and the log type (Administrative, Analytical, Debug, or Operational).
 
 Additionally, we can explore the event log providers associated with each log using the `-ListProvider` parameter. Event log providers serve as the sources of events within the logs. Executing the following command allows us to retrieve the list of providers and their respective linked logs.
-
-Get-WinEvent
 
 ```powershell-session
 PS C:\Users\Administrator> Get-WinEvent -ListProvider * | Format-Table -AutoSize
