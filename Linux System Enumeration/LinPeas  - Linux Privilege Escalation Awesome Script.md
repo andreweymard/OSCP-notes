@@ -1,6 +1,6 @@
 ```shell-session
 bash linpeas.sh -a -N > linpeas_results.txt
-```
+
    
    /---------------------------------------------------------------------------------\
     |                             Do you like PEASS?                                  |
@@ -443,3 +443,4 @@ Process 1649 (john) - -bash
 
 ╔══════════╣ Different processes executed during 1 min (interesting is low number of repetitions)
 ╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#frequent-cron-jobs
+```
