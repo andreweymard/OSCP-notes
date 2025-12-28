@@ -1,4 +1,4 @@
-Let\u2019s take an example and create a PoC for the first stage on the Linux target, keeping in mind that a complete PoC should cover all steps from start to finish.
+Let us take an example and create a PoC for the first stage on the Linux target, keeping in mind that a complete PoC should cover all steps from start to finish.
 Linux Target - Information Gathering
 
 ``` bash

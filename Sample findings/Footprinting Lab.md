@@ -90,7 +90,6 @@ dc1.internal.inlanefreight.htb.          604800   IN    A        10.129.34.16
 dc2.internal.inlanefreight.htb.          604800   IN    A        10.129.34.11
 ```
 #### FTP
-
 ``` bash
 user@parrot:~$ ftp 10.129.42.195 2121                  
 Connected to 10.129.42.195.                         
@@ -136,7 +135,6 @@ ftp> exit
 221 Goodbye
 ```
 Use the ssh key file and retrieve the flag :)
-
 ## Medium
 #### NMAP
 ``` bash
@@ -314,16 +312,13 @@ getting file \important.txt of size 16 as important.txt (0.0 KiloBytes/sec) (ave
 user@parrot:~$ cat important.txt 
 sa:87N1ns@slls83
 ```
-
 #### RDP w/ pw reuse
 ``` bash
 user@parrot:~$ xfreerdp /v:10.129.94.9 /u:Administrator /p:'87N1ns@slls83' /dynamic-resolution
 ```
-
 ![[Pasted image 20251020131118.png]]
 
 Password of user HTB: lnch7ehrdn43i7AoqVPK4zWR
-
 ## HARD
 #### NMAP for UDP as well
 ``` bash

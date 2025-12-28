@@ -32,7 +32,6 @@ astrocat@htb[/htb]$ curl -s -X GET http://blog.inlanefreight.com/wp-content/plug
 [[TXT]]       readme.txt           2020-05-13 18:01 2.2K  
 ===========================================================================
      Apache/2.4.29 (Ubuntu) Server at blog.inlanefreight.com Port 80
-
 ```
 ### User Enumeration
 ``` bash
