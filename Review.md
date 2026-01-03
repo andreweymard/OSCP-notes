@@ -3,7 +3,7 @@ Rodrigo Kawase
 10 min read
 Nov 7, 2025
 
-Topic 1 - Previous Experiences
+## Topic 1 - Previous Experiences
 
 I made sure to include as much of this report as possible in Brazilian Portuguese. Those of us here know how difficult and tedious it is to search for and translate content in another language. I would like to have support for our language for Hack The Box content. There is a growing community here that appreciates its materials.
 
@@ -21,7 +21,7 @@ I had just taken a break from studying security and then came the promotion alon
 
 The conversion came to around R$ 2100.00. For me it was an opportunity and I decided to resume my studies.
 
-Topic 2 - About the Exam
+## Topic 2 - About the Exam
 Press enter or click to view image in full size
 https://www.hackthebox.com/blog/Start-cybersecurity-with-HTB-CJCA
 
@@ -40,7 +40,7 @@ If you are unsuccessful, it is important that you write and submit the report an
 I found this very good, considering that most people have limited resources, both financial and time-related. [Something other platforms should adopt].
 
 https://academy.hackthebox.com/paths/jobrole
-Topic 3 - Exam Experience
+## Topic 3 - Exam Experience
 
 I reserved my 5 days, anticipating the start of the exam on Wednesday (October 22nd) and finishing on Sunday/Monday.
 
@@ -91,7 +91,7 @@ I believe it's very worthwhile. Starting with the CJCA, you'll have a background
 
 I confess that I'm looking more closely at blue team certifications, something I hadn't considered before.
 
-Topic 4 - Preparation and Execution Tips
+## Topic 4 - Preparation and Execution Tips
 
 For my Parrot OS VM, I created a workspace for each machine, and I even made a tutorial on how to customize Parrot OS with KDE for penetration testing: https://www.linkedin.com/posts/rodrigo-tob-kawase_customiza%C3%A7%C3%A3o-do-parrot-os-em-ambiente-kde-activity-7312706217225682944-H8fG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADGkvIkB4viTClsNSbnDXKjBOeOdSTQ87Hk. It has a few bugs, but it serves to give a general idea. So I'll make a "2.0".
 
@@ -112,7 +112,7 @@ To be sure.
 
 For those who are starting out, all modules are important, but I need to highlight my personal list (the order doesn't matter):
 
-Fundamentals
+### Fundamentals
 
 Penetration Testing Process: off the schedule, but I found it [extremely important] for structuring the steps of a penetration test. It ended up being my reference for reorganizing my notes.
 
@@ -124,7 +124,7 @@ Linux Fundamentals
 
 Windows Fundamentals
 
-Offensive
+### Offensive
 
 Footprinting
 
@@ -132,7 +132,7 @@ Hacking WordPress
 
 Pentest in a Nutshell
 
-Defensive
+### Defensive
 
 Introduction to Threat Hunting & Hunting With Elastic
 
@@ -140,7 +140,7 @@ Security Monitoring & SIEM Fundamentals
 
 Incident Handling Process
 
-Reporting
+### Reporting
 
 Documentation & Reporting: off the schedule, to get an idea of \u200b\u200bwhat is important when documenting a penetration test.
 
@@ -148,7 +148,7 @@ Security Incident Reporting: off the schedule, to get an idea of \u200b\u200bwha
 
 For the report, I used SysReptor (https://github.com/Syslifters/HackTheBox-Reporting), a system recommended by Hack The Box itself. This GitHub account has report templates for all their certifications; you just need to spend an hour or two exploring to get familiar with it. I installed it in a local container and accessed it through the browser.
 
-External Resources for Practice
+### External Resources for Practice
 
 It's important to emphasize, and this is strongly reinforced by the creators' live stream, that all the content of the CJCA path is sufficient for its execution.
 
@@ -157,7 +157,7 @@ But because of the fear I had of failing the exam and having already had this ex
 Because I have an annual subscription to THM and recently got an HTB subscription due to CPTS and CWES, I used the following rooms and boxes for my preparation:
 
 *The THM ones follow this order because it's progressive in learning and difficulty. The WordPress machine is very similar to MetaTwo.*
-TryHackMe
+#### TryHackMe
 
 [BLUE] Investigating With ELK 101: https://tryhackme.com/room/investigatingwithelk101
 
@@ -173,7 +173,7 @@ TryHackMe
 
 [RED] Wordpress: CVE-2021\u201329447: https://tryhackme.com/room/wordpresscve202129447
 
-Hack The Box
+#### Hack The Box
 
 [RED] Active: https://app.hackthebox.com/machines/148
 
@@ -185,7 +185,7 @@ These machines don't train you on a specific point of the exam or give you any a
 
 If you can't get these extra subscriptions [it's not necessary], you can redo the exercises for each module (I did all the exercises from the sessions and Skills Assessments for each module at least twice, once learning and once for real). But honestly, I would do it up to 3 times to solidify the learning.
 
-Topic 5 - Reference Materials
+## Topic 5 - Reference Materials
 
 I would like to express my gratitude to the creators of the following materials I found online while researching a new exam that was rarely discussed:
 
